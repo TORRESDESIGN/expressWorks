@@ -1,8 +1,11 @@
 const express = require('express');
-const app = express();
+const pug = require('pug');
 const pugFile = process.argv[3];
 
-app.set();
+const app = express();
+
+
+app.set('views', pugFile);
 
 /*---Resources: 
 https://expressjs.com/en/guide/using-template-engines.html
